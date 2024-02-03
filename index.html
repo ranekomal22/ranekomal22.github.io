@@ -1,76 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .card {
-            width: 300px;
-            margin: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="https://i.pinimg.com/474x/36/d8/7f/36d87fb1f4fc800121b030b1b9d08137.jpg" alt="Yoga Pose 1">
-            <div class="card-content">
-                <h2>Butterfly pose</h2>
-                <p>Description of the first yoga pose goes here.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="yoga_image2.jpg" alt="Yoga Pose 2">
-            <div class="card-content">
-                <h2>Yoga Pose 2</h2>
-                <p>Description of the second yoga pose goes here.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="yoga_image3.jpg" alt="Yoga Pose 3">
-            <div class="card-content">
-                <h2>Yoga Pose 3</h2>
-                <p>Description of the third yoga pose goes here.</p>
-            </div>
-        </div>
-        <!-- Add more cards as needed -->
+
+<div class="dashboard">
+  <div class="card" onclick="expandCard(this)">
+    <img src="pose1.jpg" alt="Pose 1" class="card-image">
+    <div class="card-content">
+      <h2>Pose 1</h2>
+      <p class="description">This is a brief description of Pose 1. Click to learn more!</p>
     </div>
+  </div>
+  <!-- Repeat for other cards as needed -->
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
