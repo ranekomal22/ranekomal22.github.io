@@ -9,10 +9,12 @@
 </head>
 <body>
 
-<div class="container" id="container-1" onclick="expandCard(this)">
-    <h2>Container 1</h2>
-    <div class="cards-container">  
-    <!-- Example of a single card, replicate this structure for each of the 10 cards -->
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(event, 'container1')">
+            Container 1
+        </button>
+        <div class="accordion-content" id="container1">    <!-- Example of a single card, replicate this structure for each of the 10 cards -->
     <div class="card" onclick="expandCard(this)">
         <img src="https://i.pinimg.com/564x/35/78/ae/3578ae1c7d565d3c46f754cd805efc9d.jpg" alt="Pose 1" class="card-image">
         <h3>Butterfly pose</h3>
@@ -220,11 +222,12 @@
 </div>
 </div>
 
-<div class="container" id="container-2" onclick="expandCard(this)">
-    <h2>Container 2</h2>
-    <div class="card-description">
-      <div class="cards-container">
-            <div class="card" onclick="expandCard(this)">
+<div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(event, 'container2')">
+            Container 2
+        </button>
+        <div class="accordion-content" id="container2">
+        <div class="card" onclick="expandCard(this)">
           <img src="https://i.pinimg.com/474x/36/d8/7f/36d87fb1f4fc800121b030b1b9d08137.jpg" alt="Pose 1" class="card-image">
           <h3>Butterfly pose</h3>
           <div class="card-description">

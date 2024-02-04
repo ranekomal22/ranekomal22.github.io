@@ -7,3 +7,13 @@ function expandCard(card) {
     }
 }
 
+function toggleAccordion(event, containerId) {
+    var content = document.getElementById(containerId);
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        event.target.classList.remove('active');
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        event.target.classList.add('active');
+    }
+}
