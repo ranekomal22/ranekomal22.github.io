@@ -7,8 +7,3 @@ function expandCard(card) {
     }
 }
 
-
-function toggleContainerVisibility() {
-    var container = document.querySelector(".cards-container");
-    container.style.display = container.style.display === "none" ? "block" : "none";
-}
