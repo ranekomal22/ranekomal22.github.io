@@ -6,3 +6,9 @@ function expandCard(card) {
         description.style.display = "block";
     }
 }
+
+
+function toggleContainerVisibility() {
+    var container = document.querySelector(".cards-container");
+    container.style.display = container.style.display === "none" ? "block" : "none";
+}
